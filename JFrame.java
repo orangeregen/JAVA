@@ -162,7 +162,8 @@ public class JFrame extends javax.swing.JFrame {
        if (LowTextField.getText().equals("") || UpTextField.getText().equals("") || StepTextField.getText().equals("")){
             JOptionPane.showMessageDialog(this, "Заполните все поля данными!", "Ошибочка вышла!", JOptionPane.PLAIN_MESSAGE);
        } else
-            if(Double.valueOf(StepTextField.getText()) > Double.valueOf(UpTextField.getText()) || Double.valueOf(LowTextField.getText())> Double.valueOf(UpTextField.getText()) || Double.valueOf(StepTextField.getText()) == 0)
+           //Double.valueOf(StepTextField.getText()) > Double.valueOf(UpTextField.getText()) ||
+            if( Double.valueOf(LowTextField.getText())> Double.valueOf(UpTextField.getText()) || Double.valueOf(StepTextField.getText()) == 0)
                      JOptionPane.showMessageDialog(this, "Что-то не то с данными!", "Ошибочка вышла!", JOptionPane.PLAIN_MESSAGE);
                 else
                     {
@@ -185,19 +186,16 @@ public class JFrame extends javax.swing.JFrame {
     private void CalcButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalcButtonActionPerformed
         DefaultTableModel model = (DefaultTableModel)Table.getModel(); 
         
-        if (Table.getSelectedRowCount() == 0 )
-            JOptionPane.showMessageDialog(this, "Выберите строку для вычисления!", "Ошибочка вышла!", JOptionPane.PLAIN_MESSAGE);
-        
-        double IntegralFunc = 0;
-        double low = Double.parseDouble(model.getValueAt(Table.getSelectedRow(),0).toString());
-        double up = Double.parseDouble(model.getValueAt(Table.getSelectedRow(),1).toString());
-        double step = Double.parseDouble(model.getValueAt(Table.getSelectedRow(),2).toString());
-
-        if(step > up || low > up || step == 0)
-          JOptionPane.showMessageDialog(this, "Вы некорректно изменили данные в таблице!", "Ошибочка вышла!", JOptionPane.PLAIN_MESSAGE);
-        
         if (Table.getSelectedRowCount() == 1 )
             {
+                double IntegralFunc = 0;
+                double low = Double.parseDouble(model.getValueAt(Table.getSelectedRow(),0).toString());
+                double up = Double.parseDouble(model.getValueAt(Table.getSelectedRow(),1).toString());
+                double step = Double.parseDouble(model.getValueAt(Table.getSelectedRow(),2).toString());
+                
+            if(low > up || step == 0)
+                JOptionPane.showMessageDialog(this, "Вы некорректно изменили данные в таблице!", "Ошибочка вышла!", JOptionPane.PLAIN_MESSAGE);
+        
                 for (double i = low; i < up - step; i+= step)
                 {
                     if (up - low > step)
@@ -208,8 +206,8 @@ public class JFrame extends javax.swing.JFrame {
                 
                 model.setValueAt(IntegralFunc, Table.getSelectedRow(), 3);
             }
-//            else
-//                 JOptionPane.showMessageDialog(this, "Выберите строку для вычисления!", "Ошибочка вышла!", JOptionPane.PLAIN_MESSAGE);
+        else
+            JOptionPane.showMessageDialog(this, "Выберите строку для вычисления!", "Ошибочка вышла!", JOptionPane.PLAIN_MESSAGE);
 
     }//GEN-LAST:event_CalcButtonActionPerformed
 
