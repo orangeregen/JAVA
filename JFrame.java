@@ -283,7 +283,6 @@ public class JFrame extends javax.swing.JFrame {
             public String up;
             public String step;
     
-   //по сути это сеттер, ну или как его...конструктор...
         public void NewNode (String low, String up, String step)
                 {
                     this.low = low;
