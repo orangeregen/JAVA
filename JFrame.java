@@ -169,7 +169,7 @@ public class JFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(StepTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(StepLabel))
-                .addGap(33, 33, 33)
+                .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(AddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DeleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -258,11 +258,12 @@ public class JFrame extends javax.swing.JFrame {
                 
                 
                 try {
-                    if(low > up || step == 0)
+                    if(low > up || step == 0 || low > 1000000 || low < 0.000001 || up > 1000000 || up < 0.000001 )
                     throw new SomeProblems("Вы некорректно изменили данные в таблице!");
                 } catch (SomeProblems e) {
                   model.setValueAt(null,Table.getSelectedRow(),0);
                   model.setValueAt(null,Table.getSelectedRow(),2);
+                  return;
                 }
                      
                 
