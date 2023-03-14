@@ -208,7 +208,7 @@ public class JFrame extends javax.swing.JFrame {
             else if (Double.valueOf(s) > 1000000 || Double.valueOf(s) < 0.000001){
                 throw new SomeProblems("Неверное значение шага интегрирования!");
                     }
-            else if (Double.valueOf(l)> Double.valueOf(u)|| Double.valueOf(s) == 0){
+            else if (Double.valueOf(l)> Double.valueOf(u)|| Double.valueOf(s) == 0  || Double.valueOf(s) > Double.valueOf(u) - Double.valueOf(l)){
                 throw new SomeProblems("Что-то не то с данными!");
                     }
                 } catch (SomeProblems e) {
@@ -258,7 +258,7 @@ public class JFrame extends javax.swing.JFrame {
                 
                 
                 try {
-                    if(low > up || step == 0 || low > 1000000 || low < 0.000001 || up > 1000000 || up < 0.000001 )
+                    if(low > up || step == 0 || low > 1000000 || low < 0.000001 || up > 1000000 || up < 0.000001 || step > 1000000 || step < 0.000001 || step > up - low)
                     throw new SomeProblems("Вы некорректно изменили данные в таблице!");
                 } catch (SomeProblems e) {
                   model.setValueAt(null,Table.getSelectedRow(),0);
