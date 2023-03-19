@@ -498,7 +498,7 @@ public class JFrame extends javax.swing.JFrame {
             if (model.getRowCount()!=0)
                 model.setRowCount(0);
 
-            for (int i=0;i<bindata.size();i+=5) {
+            for (int i=0;i<bindata.size();i+=4) {
                 RecIntegral integral = new RecIntegral();
                 integral.NewNode(bindata.get(i), bindata.get(i+1), bindata.get(i+2), bindata.get(i+3));
                 model.addRow(new Object[]{bindata.get(i), bindata.get(i+1), bindata.get(i+2), bindata.get(i+3)});
