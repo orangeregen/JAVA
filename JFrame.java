@@ -21,7 +21,7 @@ public class JFrame extends javax.swing.JFrame {
     } 
     
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -51,7 +51,7 @@ public class JFrame extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Нижняя граница", "Верхняя граница", "Шаг", "Результат"
+                "РќРёР¶РЅСЏСЏ РіСЂР°РЅРёС†Р°", "Р’РµСЂС…РЅСЏСЏ РіСЂР°РЅРёС†Р°", "РЁР°Рі", "Р РµР·СѓР»СЊС‚Р°С‚"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -70,7 +70,7 @@ public class JFrame extends javax.swing.JFrame {
         AddButton.setBackground(new java.awt.Color(255, 20, 147));
         AddButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         AddButton.setForeground(new java.awt.Color(255, 255, 255));
-        AddButton.setText("Добавить");
+        AddButton.setText("Р”РѕР±Р°РІРёС‚СЊ");
         AddButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AddButtonActionPerformed(evt);
@@ -80,7 +80,7 @@ public class JFrame extends javax.swing.JFrame {
         DeleteButton.setBackground(new java.awt.Color(255, 20, 147));
         DeleteButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         DeleteButton.setForeground(new java.awt.Color(255, 255, 255));
-        DeleteButton.setText("Удалить");
+        DeleteButton.setText("РЈРґР°Р»РёС‚СЊ");
         DeleteButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DeleteButtonActionPerformed(evt);
@@ -90,7 +90,7 @@ public class JFrame extends javax.swing.JFrame {
         CalcButton.setBackground(new java.awt.Color(255, 20, 147));
         CalcButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         CalcButton.setForeground(new java.awt.Color(255, 255, 255));
-        CalcButton.setText("Вычислить");
+        CalcButton.setText("Р’С‹С‡РёСЃР»РёС‚СЊ");
         CalcButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CalcButtonActionPerformed(evt);
@@ -105,20 +105,20 @@ public class JFrame extends javax.swing.JFrame {
 
         LowLabel.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         LowLabel.setForeground(new java.awt.Color(204, 0, 102));
-        LowLabel.setText("Нижняя граница");
+        LowLabel.setText("РќРёР¶РЅСЏСЏ РіСЂР°РЅРёС†Р°");
 
         UpLabel.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         UpLabel.setForeground(new java.awt.Color(204, 0, 102));
-        UpLabel.setText("Верхняя граница");
+        UpLabel.setText("Р’РµСЂС…РЅСЏСЏ РіСЂР°РЅРёС†Р°");
 
         StepLabel.setFont(new java.awt.Font("sansserif", 0, 24)); // NOI18N
         StepLabel.setForeground(new java.awt.Color(204, 0, 102));
-        StepLabel.setText("Шаг");
+        StepLabel.setText("РЁР°Рі");
 
         ClearButton.setBackground(new java.awt.Color(255, 20, 147));
         ClearButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         ClearButton.setForeground(new java.awt.Color(255, 255, 255));
-        ClearButton.setText("Очистить таблицу");
+        ClearButton.setText("РћС‡РёСЃС‚РёС‚СЊ С‚Р°Р±Р»РёС†Сѓ");
         ClearButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ClearButtonActionPerformed(evt);
@@ -128,7 +128,7 @@ public class JFrame extends javax.swing.JFrame {
         FillButton.setBackground(new java.awt.Color(255, 20, 147));
         FillButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         FillButton.setForeground(new java.awt.Color(255, 255, 255));
-        FillButton.setText("Заполнить таблицу");
+        FillButton.setText("Р—Р°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ");
         FillButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 FillButtonActionPerformed(evt);
@@ -138,7 +138,7 @@ public class JFrame extends javax.swing.JFrame {
         SaveTxt.setBackground(new java.awt.Color(255, 20, 147));
         SaveTxt.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         SaveTxt.setForeground(new java.awt.Color(255, 255, 255));
-        SaveTxt.setText("Сохранить в текстовом виде");
+        SaveTxt.setText("РЎРѕС…СЂР°РЅРёС‚СЊ РІ С‚РµРєСЃС‚РѕРІРѕРј РІРёРґРµ");
         SaveTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SaveTxtActionPerformed(evt);
@@ -148,7 +148,7 @@ public class JFrame extends javax.swing.JFrame {
         SaveBinary.setBackground(new java.awt.Color(255, 20, 147));
         SaveBinary.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         SaveBinary.setForeground(new java.awt.Color(255, 255, 255));
-        SaveBinary.setText("Сохранить в двоичном виде");
+        SaveBinary.setText("РЎРѕС…СЂР°РЅРёС‚СЊ РІ РґРІРѕРёС‡РЅРѕРј РІРёРґРµ");
         SaveBinary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SaveBinaryActionPerformed(evt);
@@ -158,7 +158,7 @@ public class JFrame extends javax.swing.JFrame {
         LoadTxt.setBackground(new java.awt.Color(255, 20, 147));
         LoadTxt.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         LoadTxt.setForeground(new java.awt.Color(255, 255, 255));
-        LoadTxt.setText("Загрузить в текстовом виде");
+        LoadTxt.setText("Р—Р°РіСЂСѓР·РёС‚СЊ РІ С‚РµРєСЃС‚РѕРІРѕРј РІРёРґРµ");
         LoadTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LoadTxtActionPerformed(evt);
@@ -168,7 +168,7 @@ public class JFrame extends javax.swing.JFrame {
         LoadBinary.setBackground(new java.awt.Color(255, 20, 147));
         LoadBinary.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         LoadBinary.setForeground(new java.awt.Color(255, 255, 255));
-        LoadBinary.setText("Загрузить в двоичном виде");
+        LoadBinary.setText("Р—Р°РіСЂСѓР·РёС‚СЊ РІ РґРІРѕРёС‡РЅРѕРј РІРёРґРµ");
         LoadBinary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LoadBinaryActionPerformed(evt);
@@ -255,13 +255,13 @@ public class JFrame extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
     LinkedList <RecIntegral> data = new LinkedList <>();
     
-    private void AddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddButtonActionPerformed
+    private void AddButtonActionPerformed(java.awt.event.ActionEvent evt) {                                          
         if (LowTextField.getText().equals("") || UpTextField.getText().equals("") || StepTextField.getText().equals(""))
-            JOptionPane.showMessageDialog(this, "Заполните все поля данными!", "Ошибочка вышла!", JOptionPane.PLAIN_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Р—Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РїРѕР»СЏ РґР°РЅРЅС‹РјРё!", "РћС€РёР±РѕС‡РєР° РІС‹С€Р»Р°!", JOptionPane.PLAIN_MESSAGE);
           
         String l = LowTextField.getText();
         String u = UpTextField.getText();
@@ -270,16 +270,16 @@ public class JFrame extends javax.swing.JFrame {
                       
         try {
             if(Double.valueOf(l) > 1000000 || Double.valueOf(l) < 0.000001){
-                throw new SomeProblems("Неверное значение нижнего предела!");
+                throw new SomeProblems("РќРµРІРµСЂРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РЅРёР¶РЅРµРіРѕ РїСЂРµРґРµР»Р°!");
                     } 
             else if (Double.valueOf(u) > 1000000 || Double.valueOf(u) < 0.000001){
-                throw new SomeProblems("Неверное значение верхнего предела!");
+                throw new SomeProblems("РќРµРІРµСЂРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІРµСЂС…РЅРµРіРѕ РїСЂРµРґРµР»Р°!");
                     }
             else if (Double.valueOf(s) > 1000000 || Double.valueOf(s) < 0.000001){
-                throw new SomeProblems("Неверное значение шага интегрирования!");
+                throw new SomeProblems("РќРµРІРµСЂРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ С€Р°РіР° РёРЅС‚РµРіСЂРёСЂРѕРІР°РЅРёСЏ!");
                     }
             else if (Double.valueOf(l)> Double.valueOf(u)|| Double.valueOf(s) == 0  || Double.valueOf(s) > Double.valueOf(u) - Double.valueOf(l)){
-                throw new SomeProblems("Что-то не то с данными!");
+                throw new SomeProblems("Р§С‚Рѕ-С‚Рѕ РЅРµ С‚Рѕ СЃ РґР°РЅРЅС‹РјРё!");
                     }
                 } catch (SomeProblems e) {
                     LowTextField.setText("");
@@ -297,9 +297,9 @@ public class JFrame extends javax.swing.JFrame {
                 UpTextField.setText("");
                 StepTextField.setText("");
                             
-    }//GEN-LAST:event_AddButtonActionPerformed
+    }                                         
 
-    private void DeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteButtonActionPerformed
+    private void DeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {                                             
         DefaultTableModel model = (DefaultTableModel)Table.getModel(); 
         int SelectedRow = Table.getSelectedRow();
         
@@ -308,15 +308,15 @@ public class JFrame extends javax.swing.JFrame {
                 data.remove(SelectedRow);
             } 
                 else
-                    JOptionPane.showMessageDialog(this, "Выберите строку, которую нужно удалить!", "Ошибочка вышла!", JOptionPane.PLAIN_MESSAGE);  
-    }//GEN-LAST:event_DeleteButtonActionPerformed
+                    JOptionPane.showMessageDialog(this, "Р’С‹Р±РµСЂРёС‚Рµ СЃС‚СЂРѕРєСѓ, РєРѕС‚РѕСЂСѓСЋ РЅСѓР¶РЅРѕ СѓРґР°Р»РёС‚СЊ!", "РћС€РёР±РѕС‡РєР° РІС‹С€Р»Р°!", JOptionPane.PLAIN_MESSAGE);  
+    }                                            
 
-    private void CalcButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalcButtonActionPerformed
+    private void CalcButtonActionPerformed(java.awt.event.ActionEvent evt) {                                           
         DefaultTableModel model = (DefaultTableModel)Table.getModel();
         int countRows = model.getRowCount();
 
-        TwoThreads one = new TwoThreads(model, "первая нить");
-        TwoThreads two = new TwoThreads(model, "вторая нить");
+        TwoThreads one = new TwoThreads(model, "РїРµСЂРІР°СЏ РЅРёС‚СЊ");
+        TwoThreads two = new TwoThreads(model, "РІС‚РѕСЂР°СЏ РЅРёС‚СЊ");
         
         one.start();
         two.start();
@@ -324,16 +324,16 @@ public class JFrame extends javax.swing.JFrame {
         for (int i = 0; i < countRows; i++) {
             if (i%2==0){
                 one.run();
-                System.out.println("Работает " + one.name);
+                System.out.println("Р Р°Р±РѕС‚Р°РµС‚ " + one.name);
             }
             else{
                 two.run();
-                System.out.println("Работает " + two.name);
+                System.out.println("Р Р°Р±РѕС‚Р°РµС‚ " + two.name);
             }        
         }
-    }//GEN-LAST:event_CalcButtonActionPerformed
+    }                                          
 
-    private void FillButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FillButtonActionPerformed
+    private void FillButtonActionPerformed(java.awt.event.ActionEvent evt) {                                           
         DefaultTableModel module = (DefaultTableModel)Table.getModel();
             if (!data.isEmpty())
             {
@@ -344,24 +344,24 @@ public class JFrame extends javax.swing.JFrame {
               }
             }
                 else 
-                    JOptionPane.showMessageDialog(this, "Linked List пуст!", "Ошибочка вышла!", JOptionPane.PLAIN_MESSAGE);  
-    }//GEN-LAST:event_FillButtonActionPerformed
+                    JOptionPane.showMessageDialog(this, "Linked List РїСѓСЃС‚!", "РћС€РёР±РѕС‡РєР° РІС‹С€Р»Р°!", JOptionPane.PLAIN_MESSAGE);  
+    }                                          
 
-    private void ClearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClearButtonActionPerformed
+    private void ClearButtonActionPerformed(java.awt.event.ActionEvent evt) {                                            
         DefaultTableModel model = (DefaultTableModel)Table.getModel(); 
             if (Table.getRowCount() != 0 ){
                 model.setRowCount(0); 
             }
             else
-                JOptionPane.showMessageDialog(this, "Таблица и так пустая!", "Ошибочка вышла!", JOptionPane.PLAIN_MESSAGE);      
-    }//GEN-LAST:event_ClearButtonActionPerformed
+                JOptionPane.showMessageDialog(this, "РўР°Р±Р»РёС†Р° Рё С‚Р°Рє РїСѓСЃС‚Р°СЏ!", "РћС€РёР±РѕС‡РєР° РІС‹С€Р»Р°!", JOptionPane.PLAIN_MESSAGE);      
+    }                                           
 
-    private void SaveTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveTxtActionPerformed
+    private void SaveTxtActionPerformed(java.awt.event.ActionEvent evt) {                                        
         DefaultTableModel model = (DefaultTableModel)Table.getModel(); 
         
         JFileChooser choosedir = new JFileChooser();
-        choosedir.setDialogTitle("Сохранить файл в текстовом виде");
-        choosedir.setFileFilter(new FileNameExtensionFilter("Текстовые документы (*.txt)","txt" ));
+        choosedir.setDialogTitle("РЎРѕС…СЂР°РЅРёС‚СЊ С„Р°Р№Р» РІ С‚РµРєСЃС‚РѕРІРѕРј РІРёРґРµ");
+        choosedir.setFileFilter(new FileNameExtensionFilter("РўРµРєСЃС‚РѕРІС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹ (*.txt)","txt" ));
         int result = choosedir.showSaveDialog(this);
         
         //File txtfile = choosedir.getSelectedFile();
@@ -382,23 +382,23 @@ public class JFrame extends javax.swing.JFrame {
                 fwrite.write("\n");
             }
             fwrite.close();
-            JOptionPane.showMessageDialog(this, "Файл сохранен!", "Уведомление", JOptionPane.PLAIN_MESSAGE); 
+            JOptionPane.showMessageDialog(this, "Р¤Р°Р№Р» СЃРѕС…СЂР°РЅРµРЅ!", "РЈРІРµРґРѕРјР»РµРЅРёРµ", JOptionPane.PLAIN_MESSAGE); 
         } catch (IOException ex){
             ex.printStackTrace();
-            JOptionPane.showMessageDialog(this, "Произошла ошибка при сохранении файла!", "Уведомление", JOptionPane.PLAIN_MESSAGE);
+            JOptionPane.showMessageDialog(this, "РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР° РїСЂРё СЃРѕС…СЂР°РЅРµРЅРёРё С„Р°Р№Р»Р°!", "РЈРІРµРґРѕРјР»РµРЅРёРµ", JOptionPane.PLAIN_MESSAGE);
         }  
         } else if (result == JFileChooser.CANCEL_OPTION)
-            System.out.println("Сохранение файла отменено");
-    }//GEN-LAST:event_SaveTxtActionPerformed
+            System.out.println("РЎРѕС…СЂР°РЅРµРЅРёРµ С„Р°Р№Р»Р° РѕС‚РјРµРЅРµРЅРѕ");
+    }                                       
 
-    private void SaveBinaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveBinaryActionPerformed
+    private void SaveBinaryActionPerformed(java.awt.event.ActionEvent evt) {                                           
         DefaultTableModel model = (DefaultTableModel)Table.getModel();
         
         LinkedList <String> bindata = new LinkedList <String>();
         
         JFileChooser choosedir = new JFileChooser();
-        choosedir.setDialogTitle("Сохранить файл в двоичном виде");
-        choosedir.setFileFilter(new FileNameExtensionFilter("Двоичные файлы (*.bin)","bin" ));
+        choosedir.setDialogTitle("РЎРѕС…СЂР°РЅРёС‚СЊ С„Р°Р№Р» РІ РґРІРѕРёС‡РЅРѕРј РІРёРґРµ");
+        choosedir.setFileFilter(new FileNameExtensionFilter("Р”РІРѕРёС‡РЅС‹Рµ С„Р°Р№Р»С‹ (*.bin)","bin" ));
         int result = choosedir.showSaveDialog(this);
         
        // File txtfile = choosedir.getSelectedFile();
@@ -417,21 +417,21 @@ public class JFrame extends javax.swing.JFrame {
         try(ObjectOutputStream obj = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(txtfile)))){
             obj.writeObject(bindata);
             obj.close();
-            JOptionPane.showMessageDialog(this, "Файл сохранен!", "Уведомление", JOptionPane.PLAIN_MESSAGE); 
+            JOptionPane.showMessageDialog(this, "Р¤Р°Р№Р» СЃРѕС…СЂР°РЅРµРЅ!", "РЈРІРµРґРѕРјР»РµРЅРёРµ", JOptionPane.PLAIN_MESSAGE); 
         } catch (IOException ex){
             ex.printStackTrace();
-            JOptionPane.showMessageDialog(this, "Произошла ошибка при сохранении файла!", "Уведомление", JOptionPane.PLAIN_MESSAGE);
+            JOptionPane.showMessageDialog(this, "РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР° РїСЂРё СЃРѕС…СЂР°РЅРµРЅРёРё С„Р°Р№Р»Р°!", "РЈРІРµРґРѕРјР»РµРЅРёРµ", JOptionPane.PLAIN_MESSAGE);
         }
         } else if (result == JFileChooser.CANCEL_OPTION)
-            System.out.println("Сохранение файла отменено");
-    }//GEN-LAST:event_SaveBinaryActionPerformed
+            System.out.println("РЎРѕС…СЂР°РЅРµРЅРёРµ С„Р°Р№Р»Р° РѕС‚РјРµРЅРµРЅРѕ");
+    }                                          
 
-    private void LoadTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoadTxtActionPerformed
+    private void LoadTxtActionPerformed(java.awt.event.ActionEvent evt) {                                        
         DefaultTableModel model = (DefaultTableModel)Table.getModel();
         
         JFileChooser choosedir = new JFileChooser();
-        choosedir.setDialogTitle("Загрузить файл в текстовом виде");
-        choosedir.setFileFilter(new FileNameExtensionFilter("Текстовые документы (*.txt)","txt" ));
+        choosedir.setDialogTitle("Р—Р°РіСЂСѓР·РёС‚СЊ С„Р°Р№Р» РІ С‚РµРєСЃС‚РѕРІРѕРј РІРёРґРµ");
+        choosedir.setFileFilter(new FileNameExtensionFilter("РўРµРєСЃС‚РѕРІС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹ (*.txt)","txt" ));
         int result = choosedir.showOpenDialog(this);
         
         if (result == JFileChooser.APPROVE_OPTION) {
@@ -457,22 +457,22 @@ public class JFrame extends javax.swing.JFrame {
             }
             buff.close();
             fread.close();
-            JOptionPane.showMessageDialog(this, "Файл загружен!", "Уведомление", JOptionPane.PLAIN_MESSAGE);                
+            JOptionPane.showMessageDialog(this, "Р¤Р°Р№Р» Р·Р°РіСЂСѓР¶РµРЅ!", "РЈРІРµРґРѕРјР»РµРЅРёРµ", JOptionPane.PLAIN_MESSAGE);                
         } catch (IOException ex){
             ex.printStackTrace();
-            JOptionPane.showMessageDialog(this, "Произошла ошибка при загрузке файла!", "Уведомление", JOptionPane.PLAIN_MESSAGE);
+            JOptionPane.showMessageDialog(this, "РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР° РїСЂРё Р·Р°РіСЂСѓР·РєРµ С„Р°Р№Р»Р°!", "РЈРІРµРґРѕРјР»РµРЅРёРµ", JOptionPane.PLAIN_MESSAGE);
         }  
         } else if (result == JFileChooser.CANCEL_OPTION)
-            System.out.println("Открытие файла отменено");
-    }//GEN-LAST:event_LoadTxtActionPerformed
+            System.out.println("РћС‚РєСЂС‹С‚РёРµ С„Р°Р№Р»Р° РѕС‚РјРµРЅРµРЅРѕ");
+    }                                       
 
-    private void LoadBinaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoadBinaryActionPerformed
+    private void LoadBinaryActionPerformed(java.awt.event.ActionEvent evt) {                                           
         DefaultTableModel model = (DefaultTableModel)Table.getModel();
         LinkedList <String> bindata =  new LinkedList <String>();
         
         JFileChooser choosedir = new JFileChooser();
-        choosedir.setDialogTitle("Загрузить файл в двоичном виде");
-        choosedir.setFileFilter(new FileNameExtensionFilter("Двоичные файлы (*.bin)","bin" ));
+        choosedir.setDialogTitle("Р—Р°РіСЂСѓР·РёС‚СЊ С„Р°Р№Р» РІ РґРІРѕРёС‡РЅРѕРј РІРёРґРµ");
+        choosedir.setFileFilter(new FileNameExtensionFilter("Р”РІРѕРёС‡РЅС‹Рµ С„Р°Р№Р»С‹ (*.bin)","bin" ));
         int result = choosedir.showOpenDialog(this);
          
         if (result == JFileChooser.APPROVE_OPTION) {
@@ -492,17 +492,17 @@ public class JFrame extends javax.swing.JFrame {
                 model.addRow(new Object[]{bindata.get(i), bindata.get(i+1), bindata.get(i+2), bindata.get(i+3)});
                 data.add(integral);
             }
-            JOptionPane.showMessageDialog(this, "Файл загружен!", "Уведомление", JOptionPane.PLAIN_MESSAGE); 
+            JOptionPane.showMessageDialog(this, "Р¤Р°Р№Р» Р·Р°РіСЂСѓР¶РµРЅ!", "РЈРІРµРґРѕРјР»РµРЅРёРµ", JOptionPane.PLAIN_MESSAGE); 
         } catch (IOException  ex){
            ex.printStackTrace();
-           JOptionPane.showMessageDialog(this, "Произошла ошибка при загрузке файла!", "Уведомление", JOptionPane.PLAIN_MESSAGE);
+           JOptionPane.showMessageDialog(this, "РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР° РїСЂРё Р·Р°РіСЂСѓР·РєРµ С„Р°Р№Р»Р°!", "РЈРІРµРґРѕРјР»РµРЅРёРµ", JOptionPane.PLAIN_MESSAGE);
         } catch (ClassNotFoundException ex){
            ex.printStackTrace();
-           JOptionPane.showMessageDialog(this, "Произошла ошибка при загрузке файла!", "Уведомление", JOptionPane.PLAIN_MESSAGE);
+           JOptionPane.showMessageDialog(this, "РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР° РїСЂРё Р·Р°РіСЂСѓР·РєРµ С„Р°Р№Р»Р°!", "РЈРІРµРґРѕРјР»РµРЅРёРµ", JOptionPane.PLAIN_MESSAGE);
         }   
         } else if (result == JFileChooser.CANCEL_OPTION)
-            System.out.println("Открытие файла отменено");   
-    }//GEN-LAST:event_LoadBinaryActionPerformed
+            System.out.println("РћС‚РєСЂС‹С‚РёРµ С„Р°Р№Р»Р° РѕС‚РјРµРЅРµРЅРѕ");   
+    }                                          
 
     public class RecIntegral {
             public String low;
@@ -521,7 +521,7 @@ public class JFrame extends javax.swing.JFrame {
     
     static class SomeProblems extends Exception{
         public SomeProblems(String message) {
-           JOptionPane.showMessageDialog(null, message, "Ошибочка вышла!", JOptionPane.PLAIN_MESSAGE);
+           JOptionPane.showMessageDialog(null, message, "РћС€РёР±РѕС‡РєР° РІС‹С€Р»Р°!", JOptionPane.PLAIN_MESSAGE);
         }
     }
     
@@ -586,13 +586,13 @@ public class JFrame extends javax.swing.JFrame {
                 JFrame frame = new JFrame();
                 frame.setVisible(true);
                 frame.setLocationRelativeTo(null);
-                frame.setTitle("Вычисляем интегральчик");
+                frame.setTitle("Р’С‹С‡РёСЃР»СЏРµРј РёРЅС‚РµРіСЂР°Р»СЊС‡РёРє");
                 frame.getContentPane().setBackground(new java.awt.Color(255, 228, 225));              
             }
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton AddButton;
     private javax.swing.JButton CalcButton;
     private javax.swing.JButton ClearButton;
@@ -610,5 +610,5 @@ public class JFrame extends javax.swing.JFrame {
     private javax.swing.JLabel UpLabel;
     private javax.swing.JTextField UpTextField;
     private javax.swing.JScrollPane jScrollPane1;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
