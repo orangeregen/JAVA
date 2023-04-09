@@ -544,7 +544,7 @@ public class JFrame extends javax.swing.JFrame {
                 double IntegralFunc = 0.0;          
                 double Low = Double.parseDouble((String) Table.getValueAt(j, 0));
                 double Up = Double.parseDouble((String) Table.getValueAt(j, 1));
-                double  Step = Double.parseDouble((String) Table.getValueAt(j, 2));
+                double Step = Double.parseDouble((String) Table.getValueAt(j, 2));
                  
                 for (double i = Low; i < Up - Step; i+= Step) {
                     if (Up - Low > Step)
