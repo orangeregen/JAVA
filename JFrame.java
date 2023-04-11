@@ -321,6 +321,22 @@ public class JFrame extends javax.swing.JFrame {
         one.start();
         two.start();
         
+        for(int j = 0; j < data.size(); j++){
+            double low = Double.parseDouble((String) Table.getValueAt(j, 0));
+            double up = Double.parseDouble((String) Table.getValueAt(j, 1));
+            double step = Double.parseDouble((String) Table.getValueAt(j, 2));
+               
+        try {
+            if(low > up || step == 0 || low > 1000000 || low < 0.000001 || up > 1000000 || up < 0.000001 || step > 1000000 || step < 0.000001 || step > up - low)
+            throw new SomeProblems("Вы некорректно изменили данные в таблице!");
+        } catch (SomeProblems e) {
+//            model.setValueAt(null, j, 0);
+//            model.setValueAt(null, j, 2);
+//            model.setValueAt(null, j, 3);
+            return;
+            }
+        }  
+        
         for (int i = 0; i < countRows; i++) {
             if (i%2==0){
                 one.run();
