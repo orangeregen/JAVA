@@ -37,36 +37,36 @@ class TwoThreads extends Thread {
         }
         String message = String.valueOf(IntegralFunc) + " " + i;
         pw.println(message);
-        System.out.println("Отправляем на сервер " + message);
+        System.out.println("РћС‚РїСЂР°РІР»СЏРµРј РЅР° СЃРµСЂРІРµСЂ " + message);
 
     }
 }
 
 public class Client {
     public static void main(String args[]) throws Exception {
-        // Определяем номер порта, на котором нас ожидает сервер для ответа
+        // РћРїСЂРµРґРµР»СЏРµРј РЅРѕРјРµСЂ РїРѕСЂС‚Р°, РЅР° РєРѕС‚РѕСЂРѕРј РЅР°СЃ РѕР¶РёРґР°РµС‚ СЃРµСЂРІРµСЂ РґР»СЏ РѕС‚РІРµС‚Р°
         int portNumber = 1777;
         
-        System.out.println("Клиент запущен");
+        System.out.println("РљР»РёРµРЅС‚ Р·Р°РїСѓС‰РµРЅ");
  
-        // Открыть сокет (Socket) для обращения к локальному компьютеру
-        // Сервер мы будем запускать на этом же компьютере
-        // Это специальный класс для сетевого взаимодействия c клиентской стороны
+        // РћС‚РєСЂС‹С‚СЊ СЃРѕРєРµС‚ (Socket) РґР»СЏ РѕР±СЂР°С‰РµРЅРёСЏ Рє Р»РѕРєР°Р»СЊРЅРѕРјСѓ РєРѕРјРїСЊСЋС‚РµСЂСѓ
+        // РЎРµСЂРІРµСЂ РјС‹ Р±СѓРґРµРј Р·Р°РїСѓСЃРєР°С‚СЊ РЅР° СЌС‚РѕРј Р¶Рµ РєРѕРјРїСЊСЋС‚РµСЂРµ
+        // Р­С‚Рѕ СЃРїРµС†РёР°Р»СЊРЅС‹Р№ РєР»Р°СЃСЃ РґР»СЏ СЃРµС‚РµРІРѕРіРѕ РІР·Р°РёРјРѕРґРµР№СЃС‚РІРёСЏ c РєР»РёРµРЅС‚СЃРєРѕР№ СЃС‚РѕСЂРѕРЅС‹
         Socket socket = new Socket("127.0.0.1", portNumber);
  
-        // Создать поток для чтения символов из сокета
-        // Для этого надо открыть поток сокета - socket.getInputStream()
-        // Потом преобразовать его в поток символов - new InputStreamReader
-        // И уже потом сделать его читателем строк - BufferedReader
+        // РЎРѕР·РґР°С‚СЊ РїРѕС‚РѕРє РґР»СЏ С‡С‚РµРЅРёСЏ СЃРёРјРІРѕР»РѕРІ РёР· СЃРѕРєРµС‚Р°
+        // Р”Р»СЏ СЌС‚РѕРіРѕ РЅР°РґРѕ РѕС‚РєСЂС‹С‚СЊ РїРѕС‚РѕРє СЃРѕРєРµС‚Р° - socket.getInputStream()
+        // РџРѕС‚РѕРј РїСЂРµРѕР±СЂР°Р·РѕРІР°С‚СЊ РµРіРѕ РІ РїРѕС‚РѕРє СЃРёРјРІРѕР»РѕРІ - new InputStreamReader
+        // Р СѓР¶Рµ РїРѕС‚РѕРј СЃРґРµР»Р°С‚СЊ РµРіРѕ С‡РёС‚Р°С‚РµР»РµРј СЃС‚СЂРѕРє - BufferedReader
         BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
  
-        // Создать поток для записи символов в сокет
+        // РЎРѕР·РґР°С‚СЊ РїРѕС‚РѕРє РґР»СЏ Р·Р°РїРёСЃРё СЃРёРјРІРѕР»РѕРІ РІ СЃРѕРєРµС‚
         PrintWriter pw = new PrintWriter(socket.getOutputStream(), true);
  
         String str = " ";
  
          //!"bye".equals(str = br.readLine())
-        // Входим в цикл чтения, что нам ответил сервер
+        // Р’С…РѕРґРёРј РІ С†РёРєР» С‡С‚РµРЅРёСЏ, С‡С‚Рѕ РЅР°Рј РѕС‚РІРµС‚РёР» СЃРµСЂРІРµСЂ
         while ((str = br.readLine()) != null) {           
             Double[] num = Arrays.stream(str.split(" ")).map(Double::parseDouble).toArray(Double[]::new);
             TwoThreads threadthird = new TwoThreads(num[0], num[1], num[2], num[3].intValue(), pw);
