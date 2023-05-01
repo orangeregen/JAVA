@@ -64,8 +64,7 @@ public class Client {
         PrintWriter pw = new PrintWriter(socket.getOutputStream(), true);
  
         String str = " ";
- 
-         //!"bye".equals(str = br.readLine())
+
         // Входим в цикл чтения, что нам ответил сервер
         while ((str = br.readLine()) != null) {           
             Double[] num = Arrays.stream(str.split(" ")).map(Double::parseDouble).toArray(Double[]::new);
